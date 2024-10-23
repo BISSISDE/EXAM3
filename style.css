@@ -1,0 +1,68 @@
+.squale{
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    border: 5px black solid;
+    
+}
+.squale:hover{
+    animation: squale 4s 0.1s;
+    
+}
+@keyframes squale{
+    0%{
+        transform: rotate(0deg);
+        padding: 0;
+    }
+    50%{
+        transform: rotate(360deg);
+        padding: 60px;
+        background-color: pink;
+    }
+    100%{
+        transform: rotate(0deg);
+        padding: 0;
+    }
+}
+
+
+.circular{
+    margin-top: 50px;
+    width: 800px;
+    border: 3px black solid;
+    height: 200px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 999px;
+    border: 1px black solid;
+    animation: circular 3s infinite;
+}
+@keyframes circular{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 600px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+.downland{
+    margin-top: 50px;
+    animation: downland 6s infinite steps(100000);
+}
+@keyframes downland{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(1000deg);
+    }
+    100%{
+        transform: rotate(2000deg);
+    }
+}
